@@ -30,7 +30,7 @@ export default function CityWeather() {
     const fetchWeather = async () => {
       setLoading(true);
       try {
-        const apiKey = process.env.WEATHER_API_KEY;
+        const apiKey = process.env.NEXT_PUBLIC_WEATHER_API_KEY;
         if (!apiKey) throw new Error("API Key is missing.");
 
         const response = await fetch(
